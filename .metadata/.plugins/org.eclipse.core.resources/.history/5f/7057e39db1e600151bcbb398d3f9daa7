@@ -1,0 +1,20 @@
+package com.example.ttb;
+
+import java.util.List;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+
+public class PictureAdapter extends ArrayAdapter<SonOfListView> {
+	private int resourceId;
+	public PictureAdapter(Context context,int imageViewResourceId,List<SonOfListView> objects ){
+		super(context,imageViewResourceId,objects);
+		resourceId=imageViewResourceId;
+	}
+	@Override
+	public View getView(int position ,View convertView ,ViewGroup parent){
+		
+	}
+}

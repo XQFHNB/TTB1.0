@@ -1,0 +1,22 @@
+package com.example.ttb;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ListView;
+
+public class ActivitiesSecond extends Activity {
+	private List<SonOfListView>  photosList=new ArrayList<SonOfListView>();
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.photos);
+		initphotos();
+		PictureAdapter adapter=new PictureAdapter(ActivitiesSecond.this, R.layout.square_of_activities, photosList);
+		ListView listView=(ListView)findViewById(R.id.List_view);
+	    ListView.setAdapter(adapter);
+	}
+
+}

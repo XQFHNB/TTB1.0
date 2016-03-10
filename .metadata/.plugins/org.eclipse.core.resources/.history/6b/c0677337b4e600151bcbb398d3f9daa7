@@ -1,0 +1,9 @@
+package com.example.ttb;
+
+import java.util.List;
+
+import android.app.Activity;
+
+public class ActivitiesSecond extends Activity {
+	private List<SonOfListView>  photosList=new ArrayList<SonOfListView>;
+}

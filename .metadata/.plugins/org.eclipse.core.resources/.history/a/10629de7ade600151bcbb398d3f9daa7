@@ -1,0 +1,7 @@
+package com.example.ttb;
+
+public class poster_of_activity {
+	private int imageId1;
+	private int imagedId2;
+	public 
+}
